@@ -1,0 +1,892 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D. Jayasudha - Personal Profile</title>
+    <meta name="description" content="A colourful, highly visual modern personal profile and resume presentation prototype for D. Jayasudha (B.E. CSE)." />
+    <meta property="og:title" content="D. Jayasudha - Personal Profile" />
+    <meta property="og:description" content="A colourful, highly visual modern personal profile and resume presentation prototype for D. Jayasudha (B.E. CSE)." />
+    <meta property="og:type" content="website" />
+
+    <!-- Google Fonts: Outfit & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Pure CSS Stylesheet -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Background Ambient Glow Shapes & Pure Blue Shine Layers in Exact Sequence -->
+    <div class="bg-ambient" aria-hidden="true">
+      <div class="ambient-blob blob-dark-blue" title="1. Dark Blue"></div>
+      <div class="ambient-blob blob-blue" title="2. Blue"></div>
+      <div class="ambient-blob blob-light-blue" title="3. Light Blue"></div>
+      <div class="ambient-blob blob-green" title="4. Green"></div>
+      <div class="ambient-blob blob-light-green" title="5. Light Green"></div>
+      <div class="ambient-blob blob-pink" title="6. Pink"></div>
+      <div class="ambient-blob blob-red" title="7. Red"></div>
+
+      <!-- Background Layer Pure Blue Shine Streams & Waves -->
+      <div class="bg-blue-shine-stream stream-1"></div>
+      <div class="bg-blue-shine-stream stream-2"></div>
+      <div class="bg-blue-shine-stream stream-3"></div>
+      <div class="bg-blue-shine-aurora aurora-top"></div>
+      <div class="bg-blue-shine-aurora aurora-mid"></div>
+      <div class="bg-blue-shine-aurora aurora-bottom"></div>
+    </div>
+
+    <!-- Fixed Viewport Blue Shine Sweep (Visible across all scroll positions) -->
+    <div class="bg-fixed-blue-shine" aria-hidden="true">
+      <div class="shine-beam-diagonal beam-1"></div>
+      <div class="shine-beam-diagonal beam-2"></div>
+      <div class="shine-radial-spot spot-1"></div>
+      <div class="shine-radial-spot spot-2"></div>
+    </div>
+
+    <!-- ======================================================================
+         1. ANIMATED LOADING SCREEN (Computer-based items, emojis, degree cap, books)
+         ====================================================================== -->
+    <aside id="loading-screen" aria-label="Loading animation">
+      <!-- Background Digital Code Rain & Stream -->
+      <div class="loading-code-stream" aria-hidden="true">
+        <span class="code-token token-1">&lt;B.E. CSE_Dev /&gt;</span>
+        <span class="code-token token-2">01001010</span>
+        <span class="code-token token-3">def compile_portfolio():</span>
+        <span class="code-token token-4">Diploma.honors = 95%</span>
+        <span class="code-token token-5">SELECT * FROM skills;</span>
+        <span class="code-token token-6">{ python: true, c: true }</span>
+        <span class="code-token token-7">01010011</span>
+        <span class="code-token token-8">npm run build</span>
+      </div>
+
+      <!-- Moving Animated Academic & Computer Hero Items -->
+      <div class="loading-floating-items" aria-hidden="true">
+        <!-- 1. Animated Degree Cap with Swinging Gold Tassel -->
+        <div class="loading-interactive-card item-cap">
+          <div class="mini-animated-cap">
+            <div class="cap-mortarboard">
+              <div class="cap-button"></div>
+              <div class="cap-tassel"></div>
+            </div>
+          </div>
+          <div class="card-text-group">
+            <strong class="card-main-title">🎓 Degree Cap</strong>
+            <span class="card-sub-title">Diploma in CSE (95%)</span>
+          </div>
+        </div>
+
+        <!-- 2. Animated Laptop Computer with Live Code Screen -->
+        <div class="loading-interactive-card item-laptop">
+          <div class="mini-animated-laptop">
+            <div class="laptop-screen">
+              <div class="screen-dots">
+                <span class="s-dot dot-r"></span>
+                <span class="s-dot dot-y"></span>
+                <span class="s-dot dot-g"></span>
+              </div>
+              <div class="screen-body">
+                <span class="code-txt">&gt; CSE_Core.init()</span>
+                <span class="typing-cursor">_</span>
+              </div>
+            </div>
+            <div class="laptop-base"></div>
+          </div>
+          <div class="card-text-group">
+            <strong class="card-main-title">💻 Laptop / PC</strong>
+            <span class="card-sub-title">Full Computer Science</span>
+          </div>
+        </div>
+
+        <!-- 3. Animated Academic Books Stack with Ribbon -->
+        <div class="loading-interactive-card item-books">
+          <div class="mini-animated-books">
+            <div class="book-layer book-blue"><span>CSE Vol. 1</span></div>
+            <div class="book-layer book-green"><span>Data Struct</span></div>
+            <div class="book-layer book-pink"><span>Algorithms</span></div>
+          </div>
+          <div class="card-text-group">
+            <strong class="card-main-title">📚 Study Books</strong>
+            <span class="card-sub-title">Theory &amp; Lab Manuals</span>
+          </div>
+        </div>
+
+        <!-- 4. Desktop Computer Monitor -->
+        <div class="loading-interactive-card item-desktop">
+          <div class="mini-animated-desktop">
+            <div class="desktop-screen-box">
+              <span class="desktop-symbol">&lt;/&gt;</span>
+            </div>
+            <div class="desktop-neck"></div>
+            <div class="desktop-foot"></div>
+          </div>
+          <div class="card-text-group">
+            <strong class="card-main-title">🖥️ Desktop Station</strong>
+            <span class="card-sub-title">Coding Terminal</span>
+          </div>
+        </div>
+
+        <!-- 5. Open Book with Turning Pages -->
+        <div class="loading-interactive-card item-openbook">
+          <span class="badge-icon-large bounce-emoji">📖</span>
+          <div class="card-text-group">
+            <strong class="card-main-title">Reading Notes</strong>
+            <span class="card-sub-title">Library Reference</span>
+          </div>
+        </div>
+
+        <!-- 6. Degree Diploma Certificate -->
+        <div class="loading-interactive-card item-diploma">
+          <span class="badge-icon-large float-emoji">📜</span>
+          <div class="card-text-group">
+            <strong class="card-main-title">Diploma Certificate</strong>
+            <span class="card-sub-title">State Board of Tech Ed</span>
+          </div>
+        </div>
+
+        <!-- 7. Rotating CPU Processor Gear -->
+        <div class="loading-interactive-card item-gear">
+          <span class="badge-icon-large spin-emoji">⚙️</span>
+          <div class="card-text-group">
+            <strong class="card-main-title">Computer Processor</strong>
+            <span class="card-sub-title">High Speed Computing</span>
+          </div>
+        </div>
+
+        <!-- 8. Keyboard & Optical Mouse -->
+        <div class="loading-interactive-card item-keyboard">
+          <span class="badge-icon-large">⌨️</span>
+          <span class="badge-icon-large">🖱️</span>
+          <div class="card-text-group">
+            <strong class="card-main-title">Input Hardware</strong>
+            <span class="card-sub-title">Keyboard &amp; Mouse</span>
+          </div>
+        </div>
+
+        <!-- 9. Student ID Card -->
+        <div class="loading-interactive-card item-idcard">
+          <span class="badge-icon-large float-emoji">🪪</span>
+          <div class="card-text-group">
+            <strong class="card-main-title">Student Identity</strong>
+            <span class="card-sub-title">D. Jayasudha (B.E. CSE)</span>
+          </div>
+        </div>
+
+        <!-- 10. Microchip Memory & Storage -->
+        <div class="loading-interactive-card item-chip">
+          <span class="badge-icon-large pulse-emoji">💾</span>
+          <div class="card-text-group">
+            <strong class="card-main-title">Data Storage</strong>
+            <span class="card-sub-title">RAM &amp; Solid State</span>
+          </div>
+        </div>
+
+        <!-- Lively Drifting Background Emojis -->
+        <div class="moving-emoji-bubble bubble-1" title="Graduation Cap">🎓</div>
+        <div class="moving-emoji-bubble bubble-2" title="Laptop">💻</div>
+        <div class="moving-emoji-bubble bubble-3" title="Books">📚</div>
+        <div class="moving-emoji-bubble bubble-4" title="Desktop Monitor">🖥️</div>
+        <div class="moving-emoji-bubble bubble-5" title="Open Book">📖</div>
+        <div class="moving-emoji-bubble bubble-6" title="Electric Circuit">⚡</div>
+        <div class="moving-emoji-bubble bubble-7" title="Degree Diploma">📜</div>
+        <div class="moving-emoji-bubble bubble-8" title="Tech Logic">🧠</div>
+        <div class="moving-emoji-bubble bubble-9" title="Trophy">🏆</div>
+        <div class="moving-emoji-bubble bubble-10" title="Writing Code">✍️</div>
+        <div class="moving-emoji-bubble bubble-11" title="Rocket Launch">🚀</div>
+        <div class="moving-emoji-bubble bubble-12" title="Computer Keyboard">⌨️</div>
+      </div>
+
+      <!-- Central Loading Card with Orbiting Items -->
+      <div class="loading-central-card">
+        <!-- Orbiting Degree Cap, Laptop, Books around Avatar -->
+        <div class="avatar-orbit-system">
+          <div class="avatar-orbit-track">
+            <div class="orbit-satellite sat-cap" title="Degree Cap">
+              <span class="sat-emoji">🎓</span>
+            </div>
+            <div class="orbit-satellite sat-laptop" title="Computer / Laptop">
+              <span class="sat-emoji">💻</span>
+            </div>
+            <div class="orbit-satellite sat-books" title="Books">
+              <span class="sat-emoji">📚</span>
+            </div>
+          </div>
+
+          <!-- Center Tech Emblem Hub (No image in loading animation) -->
+          <div class="loading-avatar-wrap loading-tech-core" aria-label="B.E. CSE Core Hub">
+            <div class="tech-core-inner">
+              <span class="tech-core-icon">💻</span>
+              <span class="tech-core-code">&lt;CSE/&gt;</span>
+            </div>
+            <div class="tech-core-ring"></div>
+          </div>
+        </div>
+
+        <h2 class="loading-title">D. JAYASUDHA</h2>
+        <div class="loading-subtitle">B.E. CSE Portfolio Prototype</div>
+
+        <div class="loading-progress-container">
+          <div id="loading-progress-bar" class="loading-progress-bar">
+            <div class="progress-shine-head"></div>
+          </div>
+        </div>
+
+        <div class="loading-status-text">
+          <span id="loading-step-phrase">💻 Initializing Computer Science &amp; Engineering...</span>
+          <strong id="loading-percentage-text">0%</strong>
+        </div>
+
+        <button type="button" id="skip-intro-btn" class="skip-intro-btn">Skip Intro &rarr;</button>
+      </div>
+    </aside>
+
+    <!-- ======================================================================
+         2. NAVIGATION BAR
+         ====================================================================== -->
+    <header class="site-nav">
+      <div class="nav-container">
+        <a href="#profile" class="nav-brand" id="nav-brand-link">
+          <span class="brand-badge">DJ</span>
+          <span>D. JAYASUDHA</span>
+          <span class="brand-degree">B.E. CSE</span>
+        </a>
+
+        <nav aria-label="Main Navigation">
+          <ul class="nav-links">
+            <li><a href="#profile" class="nav-link">About</a></li>
+            <li><a href="#personal-info" class="nav-link">Info</a></li>
+            <li><a href="#education" class="nav-link">Education</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#activities" class="nav-link">Activities</a></li>
+            <li><a href="#languages" class="nav-link">Languages</a></li>
+            <li><a href="#declaration" class="nav-link">Declaration</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-actions">
+          <button type="button" id="replay-intro-btn" class="btn-replay" title="Replay intro loading animation">
+            <span>↺ Intro</span>
+          </button>
+          <button type="button" class="btn-gradient open-resume-modal" id="nav-resume-btn">
+            <span>📄 Resume</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- ======================================================================
+         3. MAIN CONTENT
+         ====================================================================== -->
+    <main class="main-wrapper">
+      <!-- HERO / PROFILE SECTION -->
+      <section id="profile" class="section-block" aria-labelledby="hero-name-heading">
+        <div class="hero-profile-card">
+          <!-- Top Accent Color Bar with Clear Color & Blue Shine -->
+          <div class="profile-card-color-bar" aria-hidden="true"></div>
+
+          <!-- Large Circular Profile Photo -->
+          <div class="profile-avatar-container">
+            <!-- Clear Colour Profile Ring with Blue Shine (No Blur) -->
+            <div class="profile-color-ring" aria-hidden="true"></div>
+
+            <!-- Floating Highlights -->
+            <div class="avatar-float-badge badge-top-left">
+              <span>🎓</span> Diploma CSE (95%)
+            </div>
+            <div class="avatar-float-badge badge-bottom-right">
+              <span>⚡</span> 3+ Years Experience
+            </div>
+
+            <div class="avatar-wrapper">
+              <img
+                src="https://raw.githubusercontent.com/jayasudhad11-png/Files/refs/heads/main/IMG_20260907_122110.jpg"
+                onerror="this.onerror=null; this.src='profile.jpg';"
+                referrerpolicy="no-referrer"
+                crossorigin="anonymous"
+                alt="Profile Photo of D. Jayasudha"
+                class="profile-photo"
+                id="hero-profile-image"
+              />
+            </div>
+          </div>
+
+          <!-- Name & Qualification -->
+          <h1 id="hero-name-heading" class="hero-name">D. JAYASUDHA</h1>
+          <div>
+            <span class="hero-qualification">B.E. CSE</span>
+          </div>
+
+          <!-- Objective as a short bio -->
+          <div class="hero-bio-box">
+            <div class="hero-bio-label">
+              <span>🎯 Career Objective</span>
+            </div>
+            <p class="hero-bio-text">
+              Seeking a position to utilize my skill and abilities in an organization that offers personal growth while being Resourceful, Innovative and Flexible also to strive hard endeavor my best to enhance the overall development of the organization.
+            </p>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="hero-cta-group">
+            <button type="button" class="btn-action-main open-resume-modal" id="hero-resume-btn">
+              <span>📄 VIEW / DOWNLOAD RESUME</span>
+            </button>
+            <a href="mailto:jayasudhad19510057@gmail.com" class="btn-action-secondary" id="hero-email-btn">
+              <span>✉️ Send Email</span>
+            </a>
+            <a href="tel:8300558682" class="btn-action-secondary" id="hero-phone-btn">
+              <span>📞 8300558682</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- PERSONAL INFORMATION SECTION (COLOURFUL CARDS WITH ICONS) -->
+      <section id="personal-info" class="section-block" aria-labelledby="heading-personal-info">
+        <div class="section-header">
+          <span class="section-tag tag-darkblue">Profile Overview</span>
+          <h2 id="heading-personal-info" class="section-title">Personal Information</h2>
+        </div>
+
+        <div class="personal-info-grid">
+          <!-- Mobile (Phone Icon) -->
+          <div class="info-card theme-phone" id="card-mobile">
+            <div class="info-icon-box" aria-hidden="true">📞</div>
+            <div class="info-content">
+              <div class="info-label">Mobile Number</div>
+              <div class="info-value">
+                <a href="tel:8300558682">8300558682</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Email (Email/Gmail Icon) -->
+          <div class="info-card theme-email" id="card-email">
+            <div class="info-icon-box" aria-hidden="true">✉️</div>
+            <div class="info-content">
+              <div class="info-label">Email Address</div>
+              <div class="info-value">
+                <a href="mailto:jayasudhad19510057@gmail.com">jayasudhad19510057@gmail.com</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Date of Birth (Calendar Icon) -->
+          <div class="info-card theme-dob" id="card-dob">
+            <div class="info-icon-box" aria-hidden="true">📅</div>
+            <div class="info-content">
+              <div class="info-label">Date of Birth</div>
+              <div class="info-value">5st July 2002</div>
+            </div>
+          </div>
+
+          <!-- Permanent Address (Location Pin Icon) -->
+          <div class="info-card theme-address" id="card-address">
+            <div class="info-icon-box" aria-hidden="true">📍</div>
+            <div class="info-content">
+              <div class="info-label">Permanent Address</div>
+              <div class="info-value">2/227 Periyagaram vill & po, Thirupattur (Dt) 635901</div>
+            </div>
+          </div>
+
+          <!-- Father's Name (Family/Person Icon) -->
+          <div class="info-card theme-father" id="card-father">
+            <div class="info-icon-box" aria-hidden="true">👨‍👧</div>
+            <div class="info-content">
+              <div class="info-label">Father's Name</div>
+              <div class="info-value">Devaraj R</div>
+            </div>
+          </div>
+
+          <!-- Gender (Suitable Icon) -->
+          <div class="info-card theme-gender" id="card-gender">
+            <div class="info-icon-box" aria-hidden="true">👩</div>
+            <div class="info-content">
+              <div class="info-label">Gender</div>
+              <div class="info-value">Female</div>
+            </div>
+          </div>
+
+          <!-- Nationality (Suitable Icon) -->
+          <div class="info-card theme-nationality" id="card-nationality">
+            <div class="info-icon-box" aria-hidden="true">🇮🇳</div>
+            <div class="info-content">
+              <div class="info-label">Nationality</div>
+              <div class="info-value">Indian</div>
+            </div>
+          </div>
+
+          <!-- Religion (From Resume Details) -->
+          <div class="info-card theme-religion" id="card-religion">
+            <div class="info-icon-box" aria-hidden="true">🪷</div>
+            <div class="info-content">
+              <div class="info-label">Religion</div>
+              <div class="info-value">Hindu</div>
+            </div>
+          </div>
+
+          <!-- Marital Status (Suitable Icon) -->
+          <div class="info-card theme-marital" id="card-marital">
+            <div class="info-icon-box" aria-hidden="true">💍</div>
+            <div class="info-content">
+              <div class="info-label">Marital Status</div>
+              <div class="info-value">Single</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EDUCATION / ACADEMIC CREDENTIALS -->
+      <section id="education" class="section-block" aria-labelledby="heading-education">
+        <div class="section-header">
+          <span class="section-tag tag-blue">Academic Background</span>
+          <h2 id="heading-education" class="section-title">Academic Credentials</h2>
+        </div>
+
+        <div class="education-cards-list">
+          <!-- DIPLOMA (CSE) -->
+          <div class="education-card edu-diploma" id="card-edu-diploma">
+            <div class="edu-icon-badge" aria-hidden="true">🎓</div>
+            <div class="edu-main-info">
+              <div class="edu-degree-row">
+                <h3 class="edu-degree-title">DIPLOMA (CSE)</h3>
+                <span class="edu-board-chip">Board: DOTE</span>
+              </div>
+              <div class="edu-institution">Government Polytechnic College, Krishnagiri</div>
+              <div class="edu-year">
+                <span>🗓️ Passing Year: 2021</span>
+              </div>
+            </div>
+            <div class="edu-score-badge">
+              <div class="edu-percentage-val">95%</div>
+              <div class="edu-percentage-label">(Up to 4th sem)</div>
+            </div>
+          </div>
+
+          <!-- HSE -->
+          <div class="education-card edu-hse" id="card-edu-hse">
+            <div class="edu-icon-badge" aria-hidden="true">🎓</div>
+            <div class="edu-main-info">
+              <div class="edu-degree-row">
+                <h3 class="edu-degree-title">HSE</h3>
+                <span class="edu-board-chip">Board: State Board</span>
+              </div>
+              <div class="edu-institution">Government Higher Secondary School, Kasinayakanpatti</div>
+              <div class="edu-year">
+                <span>🗓️ Passing Year: 2019</span>
+              </div>
+            </div>
+            <div class="edu-score-badge">
+              <div class="edu-percentage-val">69.1%</div>
+              <div class="edu-percentage-label">Total Percentage</div>
+            </div>
+          </div>
+
+          <!-- SSLC -->
+          <div class="education-card edu-sslc" id="card-edu-sslc">
+            <div class="edu-icon-badge" aria-hidden="true">🎓</div>
+            <div class="edu-main-info">
+              <div class="edu-degree-row">
+                <h3 class="edu-degree-title">SSLC</h3>
+                <span class="edu-board-chip">Board: State Board</span>
+              </div>
+              <div class="edu-institution">Government High School, Periyagaram</div>
+              <div class="edu-year">
+                <span>🗓️ Passing Year: 2017</span>
+              </div>
+            </div>
+            <div class="edu-score-badge">
+              <div class="edu-percentage-val">86.6%</div>
+              <div class="edu-percentage-label">Total Percentage</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WORK EXPERIENCE SECTION -->
+      <section id="experience" class="section-block" aria-labelledby="heading-experience">
+        <div class="section-header">
+          <span class="section-tag tag-lightblue">Work History</span>
+          <h2 id="heading-experience" class="section-title">Professional Experience</h2>
+        </div>
+
+        <div class="experience-banner-card" id="card-work-experience">
+          <div class="exp-logo-box" aria-hidden="true">
+            <span>⚡</span>
+          </div>
+          <div class="exp-details">
+            <div class="exp-badge-row">
+              <span class="exp-duration-pill">
+                <span>⏱️ 3 years 3 months</span>
+              </span>
+              <span class="edu-board-chip">Verified Work Experience</span>
+            </div>
+            <h3 class="exp-company-name">OLA electric technology, Pochempalli</h3>
+            <div class="exp-location">
+              <span>📍 Location: Pochempalli, Tamil Nadu</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TECHNICAL SKILLS SECTION -->
+      <section id="skills" class="section-block" aria-labelledby="heading-technical-skills">
+        <div class="section-header">
+          <span class="section-tag tag-green">Core Competencies</span>
+          <h2 id="heading-technical-skills" class="section-title">Technical Skills</h2>
+        </div>
+
+        <!-- Programming Languages -->
+        <h3 class="skills-group-title">
+          <span>💻 Programming Languages</span>
+        </h3>
+        <div class="skills-grid">
+          <!-- C -->
+          <div class="skill-card skill-c" id="skill-c">
+            <div class="skill-icon-wrap" aria-hidden="true">©</div>
+            <div class="skill-info">
+              <div class="skill-title">C</div>
+              <div class="skill-category">Programming Language</div>
+            </div>
+          </div>
+
+          <!-- Java -->
+          <div class="skill-card skill-java" id="skill-java">
+            <div class="skill-icon-wrap" aria-hidden="true">☕</div>
+            <div class="skill-info">
+              <div class="skill-title">Java</div>
+              <div class="skill-category">Programming Language</div>
+            </div>
+          </div>
+
+          <!-- HTML -->
+          <div class="skill-card skill-html" id="skill-html">
+            <div class="skill-icon-wrap" aria-hidden="true">&lt;/&gt;</div>
+            <div class="skill-info">
+              <div class="skill-title">HTML</div>
+              <div class="skill-category">Markup Language</div>
+            </div>
+          </div>
+
+          <!-- Linux -->
+          <div class="skill-card skill-linux" id="skill-linux">
+            <div class="skill-icon-wrap" aria-hidden="true">🐧</div>
+            <div class="skill-info">
+              <div class="skill-title">Linux</div>
+              <div class="skill-category">Operating System / CLI</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Applications -->
+        <h3 class="skills-group-title">
+          <span>🛠️ Applications</span>
+        </h3>
+        <div class="skills-grid">
+          <!-- MS Office -->
+          <div class="skill-card skill-office" id="skill-office">
+            <div class="skill-icon-wrap" aria-hidden="true">📊</div>
+            <div class="skill-info">
+              <div class="skill-title">MS Office</div>
+              <div class="skill-category">Productivity Suite</div>
+            </div>
+          </div>
+
+          <!-- MySQL -->
+          <div class="skill-card skill-mysql" id="skill-mysql">
+            <div class="skill-icon-wrap" aria-hidden="true">🐬</div>
+            <div class="skill-info">
+              <div class="skill-title">MySQL</div>
+              <div class="skill-category">Relational Database</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PERSONAL SKILLS SECTION -->
+      <section id="personal-skills" class="section-block" aria-labelledby="heading-personal-skills">
+        <div class="section-header">
+          <span class="section-tag tag-lightgreen">Strengths</span>
+          <h2 id="heading-personal-skills" class="section-title">Personal Skills</h2>
+        </div>
+
+        <div class="personal-skills-grid">
+          <!-- Adaptability -->
+          <div class="personal-skill-card ps-theme-1" id="ps-adaptability">
+            <div class="ps-icon-bubble" aria-hidden="true">🚀</div>
+            <div class="ps-text">
+              Ability to adapt for new situations and stand up to challenges
+            </div>
+          </div>
+
+          <!-- Willingness to learn -->
+          <div class="personal-skill-card ps-theme-2" id="ps-learning">
+            <div class="ps-icon-bubble" aria-hidden="true">💡</div>
+            <div class="ps-text">
+              Willingness to learn
+            </div>
+          </div>
+
+          <!-- Leadership -->
+          <div class="personal-skill-card ps-theme-3" id="ps-leadership">
+            <div class="ps-icon-bubble" aria-hidden="true">👥</div>
+            <div class="ps-text">
+              Ability to lead a team
+            </div>
+          </div>
+
+          <!-- Responsibility -->
+          <div class="personal-skill-card ps-theme-4" id="ps-responsible">
+            <div class="ps-icon-bubble" aria-hidden="true">🛡️</div>
+            <div class="ps-text">
+              Responsible person
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CO-CURRICULAR ACTIVITIES SECTION -->
+      <section id="activities" class="section-block" aria-labelledby="heading-activities">
+        <div class="section-header">
+          <span class="section-tag tag-pink">Interests & Pursuits</span>
+          <h2 id="heading-activities" class="section-title">Co-Curricular Activities</h2>
+        </div>
+
+        <div class="activities-grid">
+          <!-- Reading Books -->
+          <div class="activity-card act-reading" id="act-reading">
+            <div class="activity-icon-container" aria-hidden="true">📚</div>
+            <h3 class="activity-title">Reading Books</h3>
+            <div class="activity-subtitle">Knowledge Expansion & Literature</div>
+          </div>
+
+          <!-- Drawing -->
+          <div class="activity-card act-drawing" id="act-drawing">
+            <div class="activity-icon-container" aria-hidden="true">🎨</div>
+            <h3 class="activity-title">Drawing</h3>
+            <div class="activity-subtitle">Visual Art & Creative Sketching</div>
+          </div>
+
+          <!-- Writing -->
+          <div class="activity-card act-writing" id="act-writing">
+            <div class="activity-icon-container" aria-hidden="true">✍️</div>
+            <h3 class="activity-title">Writing</h3>
+            <div class="activity-subtitle">Articulating Thoughts & Compositions</div>
+          </div>
+
+          <!-- Speech -->
+          <div class="activity-card act-speech" id="act-speech">
+            <div class="activity-icon-container" aria-hidden="true">🗣️</div>
+            <h3 class="activity-title">Speech</h3>
+            <div class="activity-subtitle">Public Speaking & Verbal Expression</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- LANGUAGES KNOWN -->
+      <section id="languages" class="section-block" aria-labelledby="heading-languages">
+        <div class="section-header">
+          <span class="section-tag tag-pink">Communication</span>
+          <h2 id="heading-languages" class="section-title">Languages Known</h2>
+        </div>
+
+        <div class="languages-container">
+          <div class="languages-grid">
+            <!-- Tamil Card -->
+            <div class="language-card" id="lang-card-tamil">
+              <div class="language-icon-wrap lang-icon-tamil" aria-hidden="true">
+                <span class="lang-symbol">த</span>
+              </div>
+              <h3 class="language-name">Tamil</h3>
+              <span class="language-badge badge-tamil">Native / Fluent</span>
+              <div class="language-skills-chips">
+                <span class="lang-skill-chip"><span class="chip-check">✓</span> Read</span>
+                <span class="lang-skill-chip"><span class="chip-check">✓</span> Write</span>
+                <span class="lang-skill-chip"><span class="chip-check">✓</span> Speak</span>
+              </div>
+            </div>
+
+            <!-- English Card -->
+            <div class="language-card" id="lang-card-english">
+              <div class="language-icon-wrap lang-icon-english" aria-hidden="true">
+                <span class="lang-symbol">EN</span>
+              </div>
+              <h3 class="language-name">English</h3>
+              <span class="language-badge badge-english">Professional Working</span>
+              <div class="language-skills-chips">
+                <span class="lang-skill-chip"><span class="chip-check">✓</span> Read</span>
+                <span class="lang-skill-chip"><span class="chip-check">✓</span> Write</span>
+                <span class="lang-skill-chip"><span class="chip-check">✓</span> Speak</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- RESUME DOWNLOAD BANNER -->
+      <section class="resume-action-section" aria-label="Resume Download Banner">
+        <h2 class="resume-section-title">Official Resume Document</h2>
+        <p class="resume-section-sub">
+          Review the complete academic, technical, and professional credentials of D. Jayasudha in PDF format.
+        </p>
+        <button type="button" class="btn-resume-big open-resume-modal" id="banner-resume-btn">
+          <span>📄 VIEW / DOWNLOAD RESUME</span>
+        </button>
+      </section>
+
+      <!-- DECLARATION SECTION -->
+      <section id="declaration" class="section-block" aria-labelledby="heading-declaration">
+        <div class="section-header">
+          <span class="section-tag tag-red">Official Statement</span>
+          <h2 id="heading-declaration" class="section-title">Declaration</h2>
+        </div>
+
+        <div class="declaration-card" id="card-declaration">
+          <blockquote class="declaration-statement">
+            "I hereby declare that the information furnished above is true to the best of my knowledge."
+          </blockquote>
+
+          <div class="declaration-footer">
+            <div class="declaration-signature">
+              <div class="signature-pre">Yours Sincerely,</div>
+              <div class="signature-name">(JAYASUDHA.D)</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ======================================================================
+         4. RESUME PREVIEW & DOWNLOAD MODAL
+         ====================================================================== -->
+    <div id="resume-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-resume-title">
+      <div class="modal-card modal-card-large">
+        <button type="button" id="close-resume-modal" class="modal-close-btn" aria-label="Close modal">&times;</button>
+        
+        <div class="modal-header-row">
+          <div class="modal-header-icon" aria-hidden="true">📄</div>
+          <div>
+            <h3 id="modal-resume-title" class="modal-title">D. Jayasudha — Official Resume Document</h3>
+            <div class="modal-subtitle">
+              <span class="badge-status-verified">Verified Credentials Attached</span>
+              <span class="badge-status-meta">2 Pages • PDF Document • ~40 KB</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-file-banner">
+          <div class="modal-file-info-group">
+            <div class="pdf-icon-badge" aria-hidden="true">PDF</div>
+            <div>
+              <div class="modal-filename" id="modal-active-filename">D_Jayasudha_Resume.pdf</div>
+              <div class="modal-file-desc">Official candidate curriculum vitae generated from verified credentials</div>
+            </div>
+          </div>
+          <div class="modal-actions-toolbar">
+            <a href="resume.pdf" download="D_Jayasudha_Resume.pdf" class="btn-action-main" id="modal-download-btn">
+              <span>⬇️ Download PDF</span>
+            </a>
+            <a href="resume.pdf" target="_blank" rel="noopener noreferrer" class="btn-action-secondary" id="modal-view-tab-btn">
+              <span>👁️ Open in Tab</span>
+            </a>
+            <button type="button" class="btn-action-secondary" id="modal-print-btn">
+              <span>🖨️ Print</span>
+            </button>
+            <button type="button" class="btn-action-secondary" id="modal-toggle-upload-btn">
+              <span>📎 Attach Custom PDF</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Custom PDF File Attachment Dropzone (Expandable) -->
+        <div id="modal-upload-container" class="modal-upload-container hidden">
+          <div class="upload-dropzone" id="resume-upload-dropzone">
+            <input type="file" id="resume-file-input" accept=".pdf,application/pdf" class="upload-file-input" aria-label="Attach resume PDF file" />
+            <div class="upload-dropzone-content">
+              <div class="upload-icon-circle" aria-hidden="true">📤</div>
+              <div class="upload-instructions">
+                <strong>Click to browse or drag and drop your updated resume.pdf here</strong>
+                <span>Supports .pdf files. Attaches and updates the preview & download links instantly.</span>
+              </div>
+            </div>
+          </div>
+          <div id="upload-status-pill" class="upload-status-pill hidden"></div>
+        </div>
+
+        <!-- View Mode Switcher -->
+        <div class="modal-tabs-row">
+          <button type="button" class="modal-tab-btn active" id="tab-visual-view">
+            <span>📖 Visual Pages View</span>
+          </button>
+          <button type="button" class="modal-tab-btn" id="tab-embed-view">
+            <span>📑 PDF Reader Frame</span>
+          </button>
+        </div>
+
+        <!-- Tab 1: Visual Page Previews -->
+        <div id="view-visual-container" class="modal-preview-scroll-area">
+          <div class="pdf-page-wrapper">
+            <div class="pdf-page-label">
+              <span>Page 1 of 2 — Profile, Education, Experience & Technical Skills</span>
+            </div>
+            <div class="pdf-page-frame">
+              <img
+                src="resume-page-1.png"
+                alt="D. Jayasudha Resume Page 1"
+                class="pdf-rendered-page-img"
+                id="resume-page-1-img"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          <div class="pdf-page-wrapper">
+            <div class="pdf-page-label">
+              <span>Page 2 of 2 — Personal Skills, Activities, Details & Declaration</span>
+            </div>
+            <div class="pdf-page-frame">
+              <img
+                src="resume-page-2.png"
+                alt="D. Jayasudha Resume Page 2"
+                class="pdf-rendered-page-img"
+                id="resume-page-2-img"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 2: Embedded PDF iframe -->
+        <div id="view-embed-container" class="modal-embed-area hidden">
+          <iframe
+            src="resume.pdf#toolbar=1&navpanes=0"
+            id="modal-pdf-iframe"
+            class="modal-pdf-iframe"
+            title="D. Jayasudha Resume PDF Document"
+          ></iframe>
+          <div class="iframe-fallback-note">
+            If the PDF does not display directly in your browser, click 
+            <a href="resume.pdf" target="_blank" rel="noopener noreferrer" class="link-highlight">Open in Tab</a> 
+            or 
+            <a href="resume.pdf" download="D_Jayasudha_Resume.pdf" class="link-highlight">Download PDF</a>.
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ======================================================================
+         5. FOOTER
+         ====================================================================== -->
+    <footer class="site-footer">
+      <p>
+        <strong>D. JAYASUDHA (B.E. CSE)</strong>. Built strictly from verified resume credentials.
+      </p>
+    </footer>
+
+    <!-- Pure Vanilla JavaScript -->
+    <script type="module" src="/script.js"></script>
+  </body>
+</html>
