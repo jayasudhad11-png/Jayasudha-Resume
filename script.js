@@ -16,8 +16,8 @@ function initApp() {
 
   const loadingPhrases = [
     { min: 0, max: 20, text: '💻 Booting Computer Science & Engineering System...' },
-    { min: 21, max: 42, text: '📚 Scanning Academic Books, Theory & Lab Manuals...' },
-    { min: 43, max: 64, text: '🎓 Calibrating Degree Cap (95% Diploma CSE Honors)...' },
+    { min: 21, max: 42, text: '⚡ Initializing Academic Profile & Credentials...' },
+    { min: 43, max: 64, text: '🎓 Loading Degree Credentials (95% Diploma CSE Honors)...' },
     { min: 65, max: 85, text: '⚡ Compiling Core Technical Skills (Python, C, SQL)...' },
     { min: 86, max: 99, text: '✨ Rendering D. Jayasudha\'s Visual Portfolio...' },
     { min: 100, max: 100, text: '🚀 Systems Online! Welcome to Profile!' }
@@ -293,6 +293,70 @@ function initApp() {
           copyEmailBtn.innerHTML = originalText;
         }, 2000);
       });
+    });
+  }
+
+  // -------------------------------------------------------------
+  // 5. RESPONSIVE MOBILE NAVIGATION DRAWER
+  // -------------------------------------------------------------
+  const mobileToggleBtn = document.getElementById('mobile-menu-toggle');
+  const mobileDrawer = document.getElementById('mobile-nav-drawer');
+  const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+  function openMobileMenu() {
+    if (!mobileToggleBtn || !mobileDrawer) return;
+    mobileToggleBtn.classList.add('active');
+    mobileToggleBtn.setAttribute('aria-expanded', 'true');
+    mobileDrawer.classList.add('open');
+    mobileDrawer.setAttribute('aria-hidden', 'false');
+  }
+
+  function closeMobileMenu() {
+    if (!mobileToggleBtn || !mobileDrawer) return;
+    mobileToggleBtn.classList.remove('active');
+    mobileToggleBtn.setAttribute('aria-expanded', 'false');
+    mobileDrawer.classList.remove('open');
+    mobileDrawer.setAttribute('aria-hidden', 'true');
+  }
+
+  if (mobileToggleBtn && mobileDrawer) {
+    mobileToggleBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isOpen = mobileDrawer.classList.contains('open');
+      if (isOpen) {
+        closeMobileMenu();
+      } else {
+        openMobileMenu();
+      }
+    });
+
+    // Close when clicking any navigation link
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        closeMobileMenu();
+      });
+    });
+
+    // Close on click outside header
+    document.addEventListener('click', (e) => {
+      const siteNav = document.querySelector('.site-nav');
+      if (siteNav && !siteNav.contains(e.target)) {
+        closeMobileMenu();
+      }
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && mobileDrawer.classList.contains('open')) {
+        closeMobileMenu();
+      }
+    });
+
+    // Close drawer when screen is resized past mobile breakpoint
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 900 && mobileDrawer.classList.contains('open')) {
+        closeMobileMenu();
+      }
     });
   }
 }

@@ -16,8 +16,8 @@ function initApp() {
 
   const loadingPhrases = [
     { min: 0, max: 20, text: '💻 Booting Computer Science & Engineering System...' },
-    { min: 21, max: 42, text: '📚 Scanning Academic Books, Theory & Lab Manuals...' },
-    { min: 43, max: 64, text: '🎓 Calibrating Degree Cap (95% Diploma CSE Honors)...' },
+    { min: 21, max: 42, text: '⚡ Initializing Academic Profile & Credentials...' },
+    { min: 43, max: 64, text: '🎓 Loading Degree Credentials (95% Diploma CSE Honors)...' },
     { min: 65, max: 85, text: '⚡ Compiling Core Technical Skills (Python, C, SQL)...' },
     { min: 86, max: 99, text: '✨ Rendering D. Jayasudha\'s Visual Portfolio...' },
     { min: 100, max: 100, text: '🚀 Systems Online! Welcome to Profile!' }
